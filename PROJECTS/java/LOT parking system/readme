@@ -1,0 +1,25 @@
+Parking Management System
+This Java-based application manages a parking lot by handling user registration, sign-ins, and vehicle tracking through automated file logging.
+
+Core Principles
+-Encapsulation: Protects user and vehicle data within private fields, allowing access only through public methods.
+
+-Abstraction: Simplifies complex operations, such as file persistence and date-based calculations, into high-level method calls.
+
+-Modularity: Distributes functionality across distinct classes, with User managing accounts, Slot managing vehicle details, and Parking acting as the system controller.
+
+Data Structures: 
+-HashSet: Enables high-speed user verification during registration and login.
+
+-TreeSet: Automatically sorts parking slots based on entrance time via the Comparable interface.
+
+-HashMap & Queue: Pairs users with their vehicles using a First-In, First-Out (FIFO) sequence for organized removal.
+
+-ArrayList: Monitors real-time lot occupancy to track capacity and prevent overfilling.
+
+Key Features
+-Data Persistence: Records every registration and parking transaction into registers.txt and history.txt.
+
+-Session Management: Restricts parking and removal actions to signed-in users for increased security.
+
+VIP Integration: Categorizes users to allow for specialized parking logic based on membership status.
